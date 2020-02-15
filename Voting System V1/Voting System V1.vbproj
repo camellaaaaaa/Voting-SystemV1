@@ -88,6 +88,18 @@
     <Compile Include="Admin_Login.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Admin_Create.Designer.vb">
+      <DependentUpon>Admin_Create.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Create.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CreateParty.Designer.vb">
+      <DependentUpon>Admin_CreateParty.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CreateParty.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -103,13 +115,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="vmsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>vmsDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Admin_Create.resx">
+      <DependentUpon>Admin_Create.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_Dashboard.resx">
       <DependentUpon>Admin_Dashboard.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_Login.resx">
       <DependentUpon>Admin_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CreateParty.resx">
+      <DependentUpon>Admin_CreateParty.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -129,6 +152,41 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="vmsDataSet.xsc">
+      <DependentUpon>vmsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="vmsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>vmsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="vmsDataSet.xss">
+      <DependentUpon>vmsDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-create-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sign-out-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-logout-rounded-up-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

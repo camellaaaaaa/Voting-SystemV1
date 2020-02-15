@@ -32,16 +32,12 @@ Partial Class Admin_Dashboard
         Me.RectangleShape5 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RectangleShape6 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.RectangleShape7 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
-        Me.Dashboard = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.ShapeContainer2 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer()
         Me.RectangleShape4 = New Microsoft.VisualBasic.PowerPacks.RectangleShape()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.CreateElection = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Nav.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -66,7 +62,7 @@ Partial Class Admin_Dashboard
         Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LinkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
         Me.LinkLabel5.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel5.Location = New System.Drawing.Point(32, 8)
+        Me.LinkLabel5.Location = New System.Drawing.Point(53, 8)
         Me.LinkLabel5.Name = "LinkLabel5"
         Me.LinkLabel5.Size = New System.Drawing.Size(143, 24)
         Me.LinkLabel5.TabIndex = 7
@@ -160,65 +156,9 @@ Partial Class Admin_Dashboard
         Me.RectangleShape7.Name = "RectangleShape7"
         Me.RectangleShape7.Size = New System.Drawing.Size(257, 115)
         '
-        'Dashboard
-        '
-        Me.Dashboard.AutoSize = True
-        Me.Dashboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Dashboard.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.Dashboard.LinkColor = System.Drawing.Color.White
-        Me.Dashboard.Location = New System.Drawing.Point(62, 65)
-        Me.Dashboard.Name = "Dashboard"
-        Me.Dashboard.Size = New System.Drawing.Size(111, 24)
-        Me.Dashboard.TabIndex = 3
-        Me.Dashboard.TabStop = True
-        Me.Dashboard.Text = "Dashboard"
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LinkLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel1.Location = New System.Drawing.Point(62, 176)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(153, 24)
-        Me.LinkLabel1.TabIndex = 3
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "Create Election"
-        '
-        'LinkLabel2
-        '
-        Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.White
-        Me.LinkLabel2.Location = New System.Drawing.Point(62, 243)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(143, 24)
-        Me.LinkLabel2.TabIndex = 3
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Register Voter"
-        '
-        'LinkLabel3
-        '
-        Me.LinkLabel3.AutoSize = True
-        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel3.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline
-        Me.LinkLabel3.LinkColor = System.Drawing.Color.Red
-        Me.LinkLabel3.Location = New System.Drawing.Point(64, 393)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(74, 24)
-        Me.LinkLabel3.TabIndex = 5
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Logout"
-        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Panel4.Controls.Add(Me.LinkLabel3)
-        Me.Panel4.Controls.Add(Me.Dashboard)
         Me.Panel4.Controls.Add(Me.ShapeContainer2)
         Me.Panel4.Location = New System.Drawing.Point(0, 38)
         Me.Panel4.Name = "Panel4"
@@ -245,66 +185,92 @@ Partial Class Admin_Dashboard
         'Button4
         '
         Me.Button4.BackColor = System.Drawing.Color.Red
+        Me.Button4.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button4.FlatAppearance.BorderSize = 0
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.ForeColor = System.Drawing.Color.White
         Me.Button4.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_logout_rounded_up_24
-        Me.Button4.Location = New System.Drawing.Point(20, 422)
+        Me.Button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Button4.Location = New System.Drawing.Point(20, 420)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(39, 41)
-        Me.Button4.TabIndex = 11
+        Me.Button4.Size = New System.Drawing.Size(203, 37)
+        Me.Button4.TabIndex = 14
+        Me.Button4.Text = "Logout"
         Me.Button4.UseVisualStyleBackColor = False
         '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Gray
+        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button3.FlatAppearance.BorderSize = 0
+        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.ForeColor = System.Drawing.Color.White
         Me.Button3.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_edit_24
-        Me.Button3.Location = New System.Drawing.Point(17, 234)
+        Me.Button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Button3.Location = New System.Drawing.Point(20, 230)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(39, 41)
-        Me.Button3.TabIndex = 10
+        Me.Button3.Size = New System.Drawing.Size(203, 37)
+        Me.Button3.TabIndex = 13
+        Me.Button3.Text = "  Register Voter"
         Me.Button3.UseVisualStyleBackColor = False
         '
-        'Button2
+        'CreateElection
         '
-        Me.Button2.BackColor = System.Drawing.Color.Gray
-        Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_create_24
-        Me.Button2.Location = New System.Drawing.Point(17, 164)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(39, 41)
-        Me.Button2.TabIndex = 9
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.CreateElection.BackColor = System.Drawing.Color.Gray
+        Me.CreateElection.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.CreateElection.FlatAppearance.BorderSize = 0
+        Me.CreateElection.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CreateElection.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CreateElection.ForeColor = System.Drawing.Color.White
+        Me.CreateElection.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_create_24
+        Me.CreateElection.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.CreateElection.Location = New System.Drawing.Point(19, 164)
+        Me.CreateElection.Name = "CreateElection"
+        Me.CreateElection.Size = New System.Drawing.Size(203, 37)
+        Me.CreateElection.TabIndex = 12
+        Me.CreateElection.Text = "     Create Election "
+        Me.CreateElection.UseVisualStyleBackColor = False
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gray
+        Me.Button1.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_home_24
-        Me.Button1.Location = New System.Drawing.Point(16, 93)
+        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Button1.Location = New System.Drawing.Point(20, 93)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(39, 41)
+        Me.Button1.Size = New System.Drawing.Size(203, 38)
         Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Dashboard"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Admin_Dashboard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(990, 506)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.LinkLabel1)
-        Me.Controls.Add(Me.LinkLabel2)
+        Me.Controls.Add(Me.CreateElection)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Nav)
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.ShapeContainer1)
+        Me.MaximizeBox = False
         Me.Name = "Admin_Dashboard"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Admin_Dashboard"
         Me.Nav.ResumeLayout(False)
         Me.Nav.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Nav As System.Windows.Forms.Panel
@@ -318,14 +284,10 @@ Partial Class Admin_Dashboard
     Friend WithEvents RectangleShape7 As Microsoft.VisualBasic.PowerPacks.RectangleShape
     Friend WithEvents RectangleShape6 As Microsoft.VisualBasic.PowerPacks.RectangleShape
     Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Dashboard As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
-    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents ShapeContainer2 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents RectangleShape4 As Microsoft.VisualBasic.PowerPacks.RectangleShape
+    Friend WithEvents CreateElection As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

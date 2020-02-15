@@ -5,7 +5,7 @@ Public Class Admin_Login
     Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=vms")
 
     Private Sub BLogin_Click(sender As Object, e As EventArgs) Handles BLogin.Click
-        Dim Homepage As New Admin_Dashboard
+
 
         Dim command As New MySqlCommand("SELECT `email`,`password` FROM `users` WHERE `email` = @email AND `password` = @password", connection)
 
