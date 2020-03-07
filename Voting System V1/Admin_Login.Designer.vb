@@ -24,15 +24,14 @@ Partial Class Admin_Login
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.LForgotPassword = New System.Windows.Forms.LinkLabel()
-        Me.CShowPassword = New System.Windows.Forms.CheckBox()
         Me.BLogin = New System.Windows.Forms.Button()
         Me.TPassword = New System.Windows.Forms.TextBox()
         Me.TEmail = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.VoterLogin = New System.Windows.Forms.LinkLabel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -43,14 +42,13 @@ Partial Class Admin_Login
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(370, 412)
+        Me.Panel1.Size = New System.Drawing.Size(370, 332)
         Me.Panel1.TabIndex = 0
         '
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.White
-        Me.Panel2.Controls.Add(Me.LForgotPassword)
-        Me.Panel2.Controls.Add(Me.CShowPassword)
+        Me.Panel2.Controls.Add(Me.VoterLogin)
         Me.Panel2.Controls.Add(Me.BLogin)
         Me.Panel2.Controls.Add(Me.TPassword)
         Me.Panel2.Controls.Add(Me.TEmail)
@@ -60,33 +58,13 @@ Partial Class Admin_Login
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Location = New System.Drawing.Point(12, 12)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(345, 388)
+        Me.Panel2.Size = New System.Drawing.Size(345, 302)
         Me.Panel2.TabIndex = 0
-        '
-        'LForgotPassword
-        '
-        Me.LForgotPassword.AutoSize = True
-        Me.LForgotPassword.Location = New System.Drawing.Point(130, 276)
-        Me.LForgotPassword.Name = "LForgotPassword"
-        Me.LForgotPassword.Size = New System.Drawing.Size(86, 13)
-        Me.LForgotPassword.TabIndex = 8
-        Me.LForgotPassword.TabStop = True
-        Me.LForgotPassword.Text = "Forgot Password"
-        '
-        'CShowPassword
-        '
-        Me.CShowPassword.AutoSize = True
-        Me.CShowPassword.Location = New System.Drawing.Point(223, 189)
-        Me.CShowPassword.Name = "CShowPassword"
-        Me.CShowPassword.Size = New System.Drawing.Size(102, 17)
-        Me.CShowPassword.TabIndex = 7
-        Me.CShowPassword.Text = "Show Password"
-        Me.CShowPassword.UseVisualStyleBackColor = True
         '
         'BLogin
         '
         Me.BLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BLogin.Location = New System.Drawing.Point(100, 240)
+        Me.BLogin.Location = New System.Drawing.Point(100, 207)
         Me.BLogin.Name = "BLogin"
         Me.BLogin.Size = New System.Drawing.Size(147, 33)
         Me.BLogin.TabIndex = 6
@@ -97,6 +75,7 @@ Partial Class Admin_Login
         '
         Me.TPassword.Location = New System.Drawing.Point(100, 153)
         Me.TPassword.Name = "TPassword"
+        Me.TPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.TPassword.Size = New System.Drawing.Size(225, 20)
         Me.TPassword.TabIndex = 5
         '
@@ -124,40 +103,53 @@ Partial Class Admin_Login
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(15, 105)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(52, 20)
+        Me.Label3.Size = New System.Drawing.Size(87, 20)
         Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Email:"
+        Me.Label3.Text = "Username:"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(139, 58)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(65, 24)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Admin"
-        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(108, 23)
+        Me.Label1.Location = New System.Drawing.Point(111, 23)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(130, 24)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Voting System"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'VoterLogin
+        '
+        Me.VoterLogin.AutoSize = True
+        Me.VoterLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.VoterLogin.Location = New System.Drawing.Point(136, 256)
+        Me.VoterLogin.Name = "VoterLogin"
+        Me.VoterLogin.Size = New System.Drawing.Size(76, 16)
+        Me.VoterLogin.TabIndex = 8
+        Me.VoterLogin.TabStop = True
+        Me.VoterLogin.Text = "Voter Login"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(142, 58)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(65, 24)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Admin"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'Admin_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(369, 412)
+        Me.ClientSize = New System.Drawing.Size(369, 331)
         Me.Controls.Add(Me.Panel1)
+        Me.MaximizeBox = False
         Me.Name = "Admin_Login"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Voting System"
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
@@ -167,13 +159,12 @@ Partial Class Admin_Login
     End Sub
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents LForgotPassword As System.Windows.Forms.LinkLabel
-    Friend WithEvents CShowPassword As System.Windows.Forms.CheckBox
     Friend WithEvents BLogin As System.Windows.Forms.Button
     Friend WithEvents TPassword As System.Windows.Forms.TextBox
     Friend WithEvents TEmail As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents VoterLogin As System.Windows.Forms.LinkLabel
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 End Class
