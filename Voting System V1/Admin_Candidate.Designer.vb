@@ -23,6 +23,7 @@ Partial Class Admin_Candidate
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.TFirstName = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -49,6 +50,7 @@ Partial Class Admin_Candidate
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VmsDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -138,7 +140,7 @@ Partial Class Admin_Candidate
         Me.Create.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Create.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Create.ForeColor = System.Drawing.Color.White
-        Me.Create.Location = New System.Drawing.Point(478, 303)
+        Me.Create.Location = New System.Drawing.Point(478, 334)
         Me.Create.Name = "Create"
         Me.Create.Size = New System.Drawing.Size(148, 35)
         Me.Create.TabIndex = 30
@@ -153,7 +155,7 @@ Partial Class Admin_Candidate
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(243, 303)
+        Me.Button5.Location = New System.Drawing.Point(243, 334)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(97, 35)
         Me.Button5.TabIndex = 44
@@ -200,8 +202,10 @@ Partial Class Admin_Candidate
         '
         'DataGridView1
         '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(478, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(478, 43)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.DataGridView1.Size = New System.Drawing.Size(506, 274)
@@ -267,7 +271,7 @@ Partial Class Admin_Candidate
         Me.BReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BReset.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BReset.ForeColor = System.Drawing.Color.White
-        Me.BReset.Location = New System.Drawing.Point(887, 303)
+        Me.BReset.Location = New System.Drawing.Point(887, 334)
         Me.BReset.Name = "BReset"
         Me.BReset.Size = New System.Drawing.Size(97, 35)
         Me.BReset.TabIndex = 50
@@ -281,7 +285,7 @@ Partial Class Admin_Candidate
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(140, 303)
+        Me.Button1.Location = New System.Drawing.Point(140, 334)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(97, 35)
         Me.Button1.TabIndex = 51
@@ -296,7 +300,7 @@ Partial Class Admin_Candidate
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(709, 303)
+        Me.Button3.Location = New System.Drawing.Point(709, 334)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(97, 35)
         Me.Button3.TabIndex = 52
@@ -322,12 +326,28 @@ Partial Class Admin_Candidate
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 43)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(450, 274)
         Me.GroupBox1.TabIndex = 53
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Candidate"
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.DimGray
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button2.FlatAppearance.BorderSize = 0
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.Color.White
+        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.Button2.Location = New System.Drawing.Point(12, 6)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(24, 31)
+        Me.Button2.TabIndex = 85
+        Me.Button2.Text = "<"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'Admin_Candidate
         '
@@ -335,7 +355,8 @@ Partial Class Admin_Candidate
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(996, 352)
+        Me.ClientSize = New System.Drawing.Size(996, 385)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
@@ -381,4 +402,5 @@ Partial Class Admin_Candidate
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

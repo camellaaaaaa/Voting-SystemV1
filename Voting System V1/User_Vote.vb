@@ -2,12 +2,19 @@
 
 Public Class User_Vote
     Public Property FirstName As String
+    Public GlobalFirstName As String
+    Public Property StudentNum As String
+    Public GlobalStudentNum As String
+ 
     Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=vms")
 
 
     Public Sub User_Vote_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Label20.Text = FirstName
+        GlobalFirstName = User_Login.GlobalFirstName
+        GlobalStudentNum = User_Login.GlobalStudentNum
+        Label20.Text = GlobalFirstName
+        Label21.Text = GlobalStudentNum
 
         'Dim adapter As New MySqlDataAdapter("SELECT `party_name` FROM party_name", connection)
         Dim adapter1 As New MySqlDataAdapter("SELECT 'party_name', `full_name` FROM candidate WHERE position='President'", connection)
@@ -136,17 +143,47 @@ Public Class User_Vote
 
     End Sub
 
+
+
+    Private Sub insertvote()
+        connection.Close()
+        Dim command1 As New MySqlCommand("INSERT INTO `vote_logs` (president,vp_executive,vp_academic,vp_student,vp_relation,vp_organization,secretary,treasurer,auditor,business,control,head,second,third,fourth,fifth,voter_name,voter_student_num) values(@president,@executive,@academic,@student,@relation,@organization,@secretary,@treasurer,@auditor,@business,@control,@head,@2nd,@3rd,@4th,@5th,@voter_name,@voter_student_num)", connection)
+
+
+        command1.Parameters.AddWithValue("@president", ComboBox2.SelectedValue)
+        command1.Parameters.AddWithValue("@executive", ComboBox3.SelectedValue)
+        command1.Parameters.AddWithValue("@academic", ComboBox4.SelectedValue)
+        command1.Parameters.AddWithValue("@student", ComboBox5.SelectedValue)
+        command1.Parameters.AddWithValue("@relation", ComboBox6.SelectedValue)
+        command1.Parameters.AddWithValue("@organization", ComboBox7.SelectedValue)
+        command1.Parameters.AddWithValue("@secretary", ComboBox8.SelectedValue)
+        command1.Parameters.AddWithValue("@treasurer", ComboBox9.SelectedValue)
+        command1.Parameters.AddWithValue("@auditor", ComboBox10.SelectedValue)
+        command1.Parameters.AddWithValue("@business", ComboBox11.SelectedValue)
+        command1.Parameters.AddWithValue("@control", ComboBox12.SelectedValue)
+        command1.Parameters.AddWithValue("@head", ComboBox13.SelectedValue)
+        command1.Parameters.AddWithValue("@2nd", ComboBox14.SelectedValue)
+        command1.Parameters.AddWithValue("@3rd", ComboBox15.SelectedValue)
+        command1.Parameters.AddWithValue("@4th", ComboBox16.SelectedValue)
+        command1.Parameters.AddWithValue("@5th", ComboBox17.SelectedValue)
+        command1.Parameters.AddWithValue("@voter_name", Label20.Text)
+        command1.Parameters.AddWithValue("@voter_student_num", Label21.Text)
+
+        connection.Open()
+        command1.ExecuteNonQuery()
+        connection.Close()
+
+
+    End Sub
+
    
     Private Sub Update_Click(sender As Object, e As EventArgs) Handles Vote.Click
-
-
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to proceed?",
-                            "Title",
-                            MessageBoxButtons.YesNo)
+                           "Title",
+                           MessageBoxButtons.YesNo)
 
         If (result = DialogResult.Yes) Then
             Try
-
 
                 Dim command As New MySqlCommand("UPDATE candidate SET vote = vote + 1 WHERE full_name = @president OR full_name=@executive OR full_name=@academic OR full_name=@student OR full_name=@relation OR full_name=@organization OR full_name=@secretary OR full_name=@treasurer OR full_name=@auditor OR full_name=@business OR full_name=@control OR full_name=@head OR full_name=@5th OR full_name=@4th OR full_name=@3rd OR full_name=@2nd", connection)
 
@@ -167,27 +204,32 @@ Public Class User_Vote
                 command.Parameters.AddWithValue("@4th", ComboBox16.SelectedValue)
                 command.Parameters.AddWithValue("@5th", ComboBox17.SelectedValue)
 
-
                 connection.Open()
                 command.ExecuteNonQuery()
                 connection.Close()
+                insertvote()
+                updatevoterstatus()
+
+
                 MessageBox.Show("Successfully Voted!")
                 User_Success.Show()
                 Me.Hide()
 
 
-
-
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
             End Try
-
         End If
 
-    End Sub
-
-
-    Private Sub Label20_Click(sender As Object, e As EventArgs) Handles Label20.Click
 
     End Sub
+
+    Private Sub updatevoterstatus()
+        connection.Open()
+        Dim command As New MySqlCommand("UPDATE voters SET voter_status = 'VOTED' WHERE student_number  = '" + Label21.Text + "'", connection)
+
+        command.ExecuteNonQuery()
+
+    End Sub
+
 End Class

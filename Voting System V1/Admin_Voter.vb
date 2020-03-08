@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 
-Public Class Admin_User
+Public Class Admin_Voter
 
     Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=;database=vms")
     Dim i As Integer
@@ -207,5 +207,9 @@ Public Class Admin_User
     End Sub
 
 
-   
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Admin_Dashboard.Show()
+        Me.Hide()
+    End Sub
 End Class

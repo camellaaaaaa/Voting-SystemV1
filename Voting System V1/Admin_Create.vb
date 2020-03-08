@@ -46,7 +46,7 @@ Public Class Admin_Create
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
-        Admin_User.Show()
+        Admin_Voter.Show()
         Me.Hide()
     End Sub
 

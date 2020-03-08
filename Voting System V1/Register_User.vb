@@ -8,7 +8,7 @@ Public Class Register_User
         Dim testString As String
         testString = Space(1)
 
-        Dim result As DialogResult = MessageBox.Show("Add Candidate?",
+        Dim result As DialogResult = MessageBox.Show("Add User?",
                              "Title",
                              MessageBoxButtons.YesNo)
 

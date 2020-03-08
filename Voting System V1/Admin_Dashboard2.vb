@@ -8,17 +8,19 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Admin_Partylist.Show()
-
+        Admin_CreateParty.Show()
+        Me.Hide()
     End Sub
 
     Private Sub VoteResults_Click(sender As Object, e As EventArgs) Handles VoteResults.Click
         Admin_Candidate.Show()
+        Me.Hide()
 
     End Sub
 
     Private Sub Candidates_Click(sender As Object, e As EventArgs) Handles Candidates.Click
-        Admin_User.Show()
+        Admin_Voter.Show()
+        Me.Hide()
 
     End Sub
 

@@ -38,9 +38,9 @@ Partial Class Admin_Dashboard2
         Me.Candidates.ForeColor = System.Drawing.Color.White
         Me.Candidates.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_edit_24
         Me.Candidates.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Candidates.Location = New System.Drawing.Point(-3, 176)
+        Me.Candidates.Location = New System.Drawing.Point(40, 269)
         Me.Candidates.Name = "Candidates"
-        Me.Candidates.Size = New System.Drawing.Size(262, 86)
+        Me.Candidates.Size = New System.Drawing.Size(307, 72)
         Me.Candidates.TabIndex = 16
         Me.Candidates.Text = "Voters"
         Me.Candidates.UseVisualStyleBackColor = False
@@ -55,9 +55,9 @@ Partial Class Admin_Dashboard2
         Me.VoteResults.ForeColor = System.Drawing.Color.White
         Me.VoteResults.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_create_24
         Me.VoteResults.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.VoteResults.Location = New System.Drawing.Point(-3, 88)
+        Me.VoteResults.Location = New System.Drawing.Point(40, 182)
         Me.VoteResults.Name = "VoteResults"
-        Me.VoteResults.Size = New System.Drawing.Size(262, 86)
+        Me.VoteResults.Size = New System.Drawing.Size(307, 82)
         Me.VoteResults.TabIndex = 15
         Me.VoteResults.Text = "Candidates"
         Me.VoteResults.UseVisualStyleBackColor = False
@@ -72,16 +72,16 @@ Partial Class Admin_Dashboard2
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_home_24
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(-3, 0)
+        Me.Button1.Location = New System.Drawing.Point(40, 102)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(262, 86)
+        Me.Button1.Size = New System.Drawing.Size(307, 74)
         Me.Button1.TabIndex = 14
         Me.Button1.Text = "Partylist"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
         '
-        Me.Button2.BackColor = System.Drawing.Color.Gray
+        Me.Button2.BackColor = System.Drawing.Color.DimGray
         Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Gray
         Me.Button2.FlatAppearance.BorderSize = 0
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
@@ -89,9 +89,9 @@ Partial Class Admin_Dashboard2
         Me.Button2.ForeColor = System.Drawing.Color.White
         Me.Button2.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_edit_24
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.Location = New System.Drawing.Point(-3, 265)
+        Me.Button2.Location = New System.Drawing.Point(40, 55)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(262, 40)
+        Me.Button2.Size = New System.Drawing.Size(307, 40)
         Me.Button2.TabIndex = 17
         Me.Button2.Text = "Go Back"
         Me.Button2.UseVisualStyleBackColor = False
@@ -100,7 +100,7 @@ Partial Class Admin_Dashboard2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(258, 305)
+        Me.ClientSize = New System.Drawing.Size(382, 401)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Candidates)
         Me.Controls.Add(Me.VoteResults)

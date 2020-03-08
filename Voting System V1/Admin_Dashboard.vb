@@ -16,7 +16,7 @@
    
     Private Sub Admin_Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GlobalFirstName = User_Login.GlobalFirstName
-
+        Label19.Text = GlobalFirstName
 
     End Sub
 
@@ -29,10 +29,6 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-    End Sub
-
-    Private Sub Label19_Click(sender As Object, e As EventArgs) Handles Label19.Click
 
     End Sub
 End Class

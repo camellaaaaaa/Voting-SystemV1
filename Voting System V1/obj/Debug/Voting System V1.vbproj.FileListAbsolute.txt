@@ -25,5 +25,6 @@ C:\Users\camil\OneDrive\Documents\Visual Studio 2012\Projects\Voting System V1\V
 C:\Users\camil\OneDrive\Documents\Visual Studio 2012\Projects\Voting System V1\Voting System V1\obj\Debug\WindowsApplication1.User_Success.resources
 C:\Users\camil\OneDrive\Documents\Visual Studio 2012\Projects\Voting System V1\Voting System V1\obj\Debug\WindowsApplication1.Admin_Results.resources
 C:\Users\camil\OneDrive\Documents\Visual Studio 2012\Projects\Voting System V1\Voting System V1\obj\Debug\WindowsApplication1.Register_Candidate.resources
-C:\Users\camil\OneDrive\Documents\Visual Studio 2012\Projects\Voting System V1\Voting System V1\obj\Debug\WindowsApplication1.Admin_User.resources
 C:\Users\camil\OneDrive\Documents\Visual Studio 2012\Projects\Voting System V1\Voting System V1\obj\Debug\WindowsApplication1.Register_User.resources
+C:\Users\camil\OneDrive\Documents\Visual Studio 2012\Projects\Voting System V1\Voting System V1\obj\Debug\WindowsApplication1.Admin_Voter.resources
+C:\Users\camil\OneDrive\Documents\Visual Studio 2012\Projects\Voting System V1\Voting System V1\obj\Debug\WindowsApplication1.Register_Partylist.resources

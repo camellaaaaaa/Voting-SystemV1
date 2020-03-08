@@ -37,11 +37,11 @@ Partial Class Admin_Dashboard
         Me.Label19.BackColor = System.Drawing.SystemColors.WindowFrame
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(92, 7)
+        Me.Label19.Location = New System.Drawing.Point(216, 33)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(72, 24)
+        Me.Label19.Size = New System.Drawing.Size(96, 24)
         Me.Label19.TabIndex = 75
-        Me.Label19.Text = "Partylist"
+        Me.Label19.Text = "FirstName"
         Me.Label19.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Button1
@@ -54,9 +54,9 @@ Partial Class Admin_Dashboard
         Me.Button1.ForeColor = System.Drawing.Color.White
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_create_24
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(0, -2)
+        Me.Button1.Location = New System.Drawing.Point(105, 24)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(262, 42)
+        Me.Button1.Size = New System.Drawing.Size(324, 42)
         Me.Button1.TabIndex = 17
         Me.Button1.UseVisualStyleBackColor = False
         '
@@ -70,9 +70,9 @@ Partial Class Admin_Dashboard
         Me.Profile.ForeColor = System.Drawing.Color.White
         Me.Profile.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_edit_24
         Me.Profile.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Profile.Location = New System.Drawing.Point(0, 309)
+        Me.Profile.Location = New System.Drawing.Point(105, 336)
         Me.Profile.Name = "Profile"
-        Me.Profile.Size = New System.Drawing.Size(262, 86)
+        Me.Profile.Size = New System.Drawing.Size(324, 86)
         Me.Profile.TabIndex = 16
         Me.Profile.Text = "Change Password"
         Me.Profile.UseVisualStyleBackColor = False
@@ -87,9 +87,9 @@ Partial Class Admin_Dashboard
         Me.CreateElection.ForeColor = System.Drawing.Color.White
         Me.CreateElection.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_create_24
         Me.CreateElection.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.CreateElection.Location = New System.Drawing.Point(0, 220)
+        Me.CreateElection.Location = New System.Drawing.Point(105, 247)
         Me.CreateElection.Name = "CreateElection"
-        Me.CreateElection.Size = New System.Drawing.Size(262, 86)
+        Me.CreateElection.Size = New System.Drawing.Size(324, 86)
         Me.CreateElection.TabIndex = 15
         Me.CreateElection.Text = "Create Election"
         Me.CreateElection.UseVisualStyleBackColor = False
@@ -104,9 +104,9 @@ Partial Class Admin_Dashboard
         Me.Registration.ForeColor = System.Drawing.Color.White
         Me.Registration.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_edit_24
         Me.Registration.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Registration.Location = New System.Drawing.Point(0, 131)
+        Me.Registration.Location = New System.Drawing.Point(105, 158)
         Me.Registration.Name = "Registration"
-        Me.Registration.Size = New System.Drawing.Size(262, 86)
+        Me.Registration.Size = New System.Drawing.Size(324, 86)
         Me.Registration.TabIndex = 13
         Me.Registration.Text = "Registration"
         Me.Registration.UseVisualStyleBackColor = False
@@ -121,9 +121,9 @@ Partial Class Admin_Dashboard
         Me.Logout.ForeColor = System.Drawing.Color.White
         Me.Logout.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_logout_rounded_up_24
         Me.Logout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Logout.Location = New System.Drawing.Point(0, 398)
+        Me.Logout.Location = New System.Drawing.Point(105, 425)
         Me.Logout.Name = "Logout"
-        Me.Logout.Size = New System.Drawing.Size(262, 43)
+        Me.Logout.Size = New System.Drawing.Size(324, 43)
         Me.Logout.TabIndex = 14
         Me.Logout.Text = "Logout"
         Me.Logout.UseVisualStyleBackColor = False
@@ -138,9 +138,9 @@ Partial Class Admin_Dashboard
         Me.VoteResults.ForeColor = System.Drawing.Color.White
         Me.VoteResults.Image = Global.WindowsApplication1.My.Resources.Resources.icons8_create_24
         Me.VoteResults.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.VoteResults.Location = New System.Drawing.Point(0, 42)
+        Me.VoteResults.Location = New System.Drawing.Point(105, 69)
         Me.VoteResults.Name = "VoteResults"
-        Me.VoteResults.Size = New System.Drawing.Size(262, 86)
+        Me.VoteResults.Size = New System.Drawing.Size(324, 86)
         Me.VoteResults.TabIndex = 12
         Me.VoteResults.Text = "Vote Results"
         Me.VoteResults.UseVisualStyleBackColor = False
@@ -149,7 +149,7 @@ Partial Class Admin_Dashboard
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(260, 441)
+        Me.ClientSize = New System.Drawing.Size(535, 494)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Profile)

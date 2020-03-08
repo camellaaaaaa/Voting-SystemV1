@@ -125,10 +125,10 @@
     <Compile Include="Admin_CreateParty.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_Partylist.Designer.vb">
-      <DependentUpon>Admin_Partylist.vb</DependentUpon>
+    <Compile Include="Register_Partylist.Designer.vb">
+      <DependentUpon>Register_Partylist.vb</DependentUpon>
     </Compile>
-    <Compile Include="Admin_Partylist.vb">
+    <Compile Include="Register_Partylist.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Admin_Results.Designer.vb">
@@ -257,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register_Candidate.resx">
       <DependentUpon>Register_Candidate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register_Partylist.resx">
+      <DependentUpon>Register_Partylist.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register_User.resx">
       <DependentUpon>Register_User.vb</DependentUpon>
