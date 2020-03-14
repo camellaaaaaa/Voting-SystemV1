@@ -8,7 +8,7 @@ Edit Profile
 Vote Candidates and Straight Vote
 
 MEMBERS:
-Pelayo, Camille Anne B.
-Infante, Patricia Diane L.
-Aplacador, Morris
+Pelayo, Camille Anne B. | 
+Infante, Patricia Diane L. |
+Aplacador, Morris |
 Bermudez, David
