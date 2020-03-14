@@ -256,6 +256,7 @@ Partial Class Register_Candidate
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(471, 341)
+        Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Create)

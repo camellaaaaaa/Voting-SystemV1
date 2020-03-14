@@ -15,8 +15,10 @@ Public Class User_Vote
         GlobalStudentNum = User_Login.GlobalStudentNum
         Label20.Text = GlobalFirstName
         Label21.Text = GlobalStudentNum
+        DateBox.Text = DateTime.Now.ToString("yyyy-MM-dd, HH:MM:ss")
 
-        'Dim adapter As New MySqlDataAdapter("SELECT `party_name` FROM party_name", connection)
+
+
         Dim adapter1 As New MySqlDataAdapter("SELECT 'party_name', `full_name` FROM candidate WHERE position='President'", connection)
         Dim adapter2 As New MySqlDataAdapter("SELECT 'party_name',`full_name` FROM candidate WHERE position='Executive Vice President'", connection)
         Dim adapter3 As New MySqlDataAdapter("SELECT 'party_name',`full_name` FROM candidate WHERE position='Vice President for Academic Affairs'", connection)
@@ -36,8 +38,6 @@ Public Class User_Vote
 
 
 
-
-        'Dim table As New DataTable()
         Dim table1 As New DataTable()
         Dim table2 As New DataTable()
         Dim table3 As New DataTable()
@@ -55,7 +55,7 @@ Public Class User_Vote
         Dim table15 As New DataTable()
         Dim table16 As New DataTable()
 
-        'adapter.Fill(table)
+
         adapter1.Fill(table1)
         adapter2.Fill(table2)
         adapter3.Fill(table3)
@@ -73,13 +73,10 @@ Public Class User_Vote
         adapter15.Fill(table15)
         adapter16.Fill(table16)
 
-        'ComboBox1.DataSource = table
-        'ComboBox1.ValueMember = "party_name"
-        'ComboBox1.DisplayMember = "party_name"
-
         ComboBox2.DataSource = table1
         ComboBox2.ValueMember = "full_name"
         ComboBox2.DisplayMember = "full_name"
+
 
         ComboBox3.DataSource = table2
         ComboBox3.ValueMember = "full_name"
@@ -139,15 +136,36 @@ Public Class User_Vote
 
         ComboBox17.DataSource = table16
         ComboBox17.ValueMember = "full_name"
-        ComboBox17.DisplayMember = "ful_name"
+        ComboBox17.DisplayMember = "full_name"
+
+    End Sub
+
+    Private Sub cleartext()
+
+        ComboBox2.Text = ""
+        ComboBox3.Text = ""
+        ComboBox4.Text = ""
+        ComboBox5.Text = ""
+        ComboBox6.Text = ""
+        ComboBox7.Text = ""
+        ComboBox8.Text = ""
+        ComboBox9.Text = ""
+        ComboBox10.Text = ""
+        ComboBox11.Text = ""
+        ComboBox12.Text = ""
+        ComboBox13.Text = ""
+        ComboBox14.Text = ""
+        ComboBox15.Text = ""
+        ComboBox16.Text = ""
+        ComboBox17.Text = ""
+        
 
     End Sub
 
 
-
     Private Sub insertvote()
         connection.Close()
-        Dim command1 As New MySqlCommand("INSERT INTO `vote_logs` (president,vp_executive,vp_academic,vp_student,vp_relation,vp_organization,secretary,treasurer,auditor,business,control,head,second,third,fourth,fifth,voter_name,voter_student_num) values(@president,@executive,@academic,@student,@relation,@organization,@secretary,@treasurer,@auditor,@business,@control,@head,@2nd,@3rd,@4th,@5th,@voter_name,@voter_student_num)", connection)
+        Dim command1 As New MySqlCommand("INSERT INTO `vote_logs` (president,vp_executive,vp_academic,vp_student,vp_relation,vp_organization,secretary,treasurer,auditor,business,control,head,second,third,fourth,fifth,voter_name,voter_student_num,date) values(@president,@executive,@academic,@student,@relation,@organization,@secretary,@treasurer,@auditor,@business,@control,@head,@2nd,@3rd,@4th,@5th,@voter_name,@voter_student_num,@date)", connection)
 
 
         command1.Parameters.AddWithValue("@president", ComboBox2.SelectedValue)
@@ -168,6 +186,7 @@ Public Class User_Vote
         command1.Parameters.AddWithValue("@5th", ComboBox17.SelectedValue)
         command1.Parameters.AddWithValue("@voter_name", Label20.Text)
         command1.Parameters.AddWithValue("@voter_student_num", Label21.Text)
+        command1.Parameters.AddWithValue("@date", DateBox.Text)
 
         connection.Open()
         command1.ExecuteNonQuery()
@@ -232,4 +251,17 @@ Public Class User_Vote
 
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        User_StraightVote.Show()
+        Me.Hide()
+    End Sub
+
+  
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        DateBox.Text = DateTime.Now.ToString("yyyy-MM-dd,HH:MM")
+    End Sub
+
+    Private Sub Label17_Click(sender As Object, e As EventArgs) Handles DateBox.Click
+
+    End Sub
 End Class

@@ -254,7 +254,7 @@ Partial Class Register_User
         Me.Button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.White
-        Me.Button5.Location = New System.Drawing.Point(251, 275)
+        Me.Button5.Location = New System.Drawing.Point(241, 275)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(97, 35)
         Me.Button5.TabIndex = 83
@@ -268,7 +268,7 @@ Partial Class Register_User
         Me.Create.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Create.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Create.ForeColor = System.Drawing.Color.White
-        Me.Create.Location = New System.Drawing.Point(148, 275)
+        Me.Create.Location = New System.Drawing.Point(138, 275)
         Me.Create.Name = "Create"
         Me.Create.Size = New System.Drawing.Size(97, 35)
         Me.Create.TabIndex = 82

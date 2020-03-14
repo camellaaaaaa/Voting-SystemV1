@@ -95,10 +95,12 @@ Partial Class Register_Partylist
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(468, 186)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Create)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Register_Partylist"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Register_Partylist"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

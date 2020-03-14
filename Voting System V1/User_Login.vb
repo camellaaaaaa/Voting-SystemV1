@@ -6,9 +6,11 @@ Public Class User_Login
     Dim Admin As New Admin_Dashboard
     Dim Admin2 As New Admin_Dashboard2
     Public GlobalFirstName As String
+    Public GlobalFirstNameAdmin As String
     Public GlobalStudentNum As String
 
-    Public Sub BLogin_Click_1(sender As Object, e As EventArgs) Handles BLogin.Click
+
+    Private Sub BLogin_Click(sender As Object, e As EventArgs) Handles BLogin.Click
         If TStudentNumber.Text = "" Or TLastName.Text = "" Then
             MessageBox.Show("Please Fill in Empty Fields!")
         Else
@@ -17,7 +19,7 @@ Public Class User_Login
             Try
                 connection.Open()
                 Dim query As String
-                query = "SELECT role,voter_status FROM voters WHERE student_number = '" & TStudentNumber.Text & "' and last_name = '" & TLastName.Text & "' "
+                query = "SELECT role,voter_status FROM voters WHERE student_number = '" & TStudentNumber.Text & "' and password = '" & TLastName.Text & "' "
                 cmd = New MySqlCommand(query, connection)
                 rolereader = cmd.ExecuteReader()
 
@@ -48,6 +50,7 @@ Public Class User_Login
                                 Home.StudentNum = reader("student_number").ToString()
                                 GlobalFirstName = Home.FirstName
                                 GlobalStudentNum = Home.StudentNum
+
                             End If
                             Home.Show()
                             Me.Hide()
@@ -55,7 +58,6 @@ Public Class User_Login
                         ElseIf usertype = "ADMIN" Then
                             connection.Close()
                             connection.Open()
-
                             Dim command2 As New MySqlCommand("SELECT `first_name` FROM `voters` WHERE `student_number` = @student_number", connection)
                             Dim reader As MySqlDataReader
                             command2.Parameters.Add("@student_number", MySqlDbType.VarChar).Value = TStudentNumber.Text
@@ -65,24 +67,23 @@ Public Class User_Login
                             reader.Read()
                             If reader.HasRows Then
                                 Admin.FirstName = reader("first_name").ToString()
-                                GlobalFirstName = Admin.FirstName
-
+                                GlobalFirstNameAdmin = Admin.FirstName
 
                             End If
                             Admin.Show()
                             Me.Hide()
                             connection.Close()
-                        Else
-                            MessageBox.Show("Invalid Username or Password")
-                            connection.Close()
                         End If
-
-
                     Else
                         MessageBox.Show("You already voted!")
                         connection.Close()
                     End If
+
+                Else
+                    MessageBox.Show("Invalid Username or Password")
+                    connection.Close()
                 End If
+
 
 
             Catch ex As Exception
@@ -91,4 +92,17 @@ Public Class User_Login
         End If
     End Sub
 
+    Private Sub Create_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub User_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
+
+
+
+
+                          
+               

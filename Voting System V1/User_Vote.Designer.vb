@@ -22,6 +22,7 @@ Partial Class User_Vote
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -37,7 +38,6 @@ Partial Class User_Vote
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
@@ -52,7 +52,6 @@ Partial Class User_Vote
         Me.ComboBox13 = New System.Windows.Forms.ComboBox()
         Me.ComboBox14 = New System.Windows.Forms.ComboBox()
         Me.ComboBox15 = New System.Windows.Forms.ComboBox()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.ComboBox16 = New System.Windows.Forms.ComboBox()
         Me.Vote = New System.Windows.Forms.Button()
         Me.ComboBox17 = New System.Windows.Forms.ComboBox()
@@ -60,8 +59,11 @@ Partial Class User_Vote
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.DateBox = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -69,7 +71,7 @@ Partial Class User_Vote
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(17, 77)
+        Me.Label3.Location = New System.Drawing.Point(17, 65)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(62, 15)
         Me.Label3.TabIndex = 3
@@ -80,7 +82,7 @@ Partial Class User_Vote
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(17, 129)
+        Me.Label2.Location = New System.Drawing.Point(17, 117)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(119, 15)
         Me.Label2.TabIndex = 5
@@ -91,7 +93,7 @@ Partial Class User_Vote
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(17, 158)
+        Me.Label4.Location = New System.Drawing.Point(17, 146)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(107, 15)
         Me.Label4.TabIndex = 6
@@ -102,7 +104,7 @@ Partial Class User_Vote
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(17, 186)
+        Me.Label5.Location = New System.Drawing.Point(17, 174)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(182, 15)
         Me.Label5.TabIndex = 7
@@ -113,7 +115,7 @@ Partial Class User_Vote
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(17, 213)
+        Me.Label6.Location = New System.Drawing.Point(17, 201)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(145, 15)
         Me.Label6.TabIndex = 8
@@ -124,7 +126,7 @@ Partial Class User_Vote
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(17, 239)
+        Me.Label7.Location = New System.Drawing.Point(17, 227)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(108, 15)
         Me.Label7.TabIndex = 9
@@ -135,7 +137,7 @@ Partial Class User_Vote
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(17, 265)
+        Me.Label8.Location = New System.Drawing.Point(17, 253)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(63, 15)
         Me.Label8.TabIndex = 10
@@ -146,7 +148,7 @@ Partial Class User_Vote
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(17, 291)
+        Me.Label9.Location = New System.Drawing.Point(17, 279)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(48, 15)
         Me.Label9.TabIndex = 11
@@ -157,7 +159,7 @@ Partial Class User_Vote
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(17, 318)
+        Me.Label10.Location = New System.Drawing.Point(17, 306)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(113, 15)
         Me.Label10.TabIndex = 12
@@ -168,7 +170,7 @@ Partial Class User_Vote
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(17, 346)
+        Me.Label11.Location = New System.Drawing.Point(17, 334)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(87, 15)
         Me.Label11.TabIndex = 13
@@ -179,7 +181,7 @@ Partial Class User_Vote
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(17, 374)
+        Me.Label12.Location = New System.Drawing.Point(17, 362)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(93, 15)
         Me.Label12.TabIndex = 14
@@ -190,7 +192,7 @@ Partial Class User_Vote
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(16, 402)
+        Me.Label13.Location = New System.Drawing.Point(16, 390)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(108, 15)
         Me.Label13.TabIndex = 15
@@ -201,7 +203,7 @@ Partial Class User_Vote
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(16, 428)
+        Me.Label14.Location = New System.Drawing.Point(16, 416)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(108, 15)
         Me.Label14.TabIndex = 16
@@ -212,7 +214,7 @@ Partial Class User_Vote
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(15, 454)
+        Me.Label15.Location = New System.Drawing.Point(15, 442)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(109, 15)
         Me.Label15.TabIndex = 17
@@ -223,27 +225,18 @@ Partial Class User_Vote
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(15, 482)
+        Me.Label16.Location = New System.Drawing.Point(15, 470)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(112, 15)
         Me.Label16.TabIndex = 18
         Me.Label16.Text = "2nd Year Governor:"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(214, 34)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(350, 23)
-        Me.ComboBox1.TabIndex = 19
-        '
         'ComboBox2
         '
         Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(214, 71)
+        Me.ComboBox2.Location = New System.Drawing.Point(214, 59)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox2.TabIndex = 20
@@ -252,7 +245,7 @@ Partial Class User_Vote
         '
         Me.ComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(214, 98)
+        Me.ComboBox3.Location = New System.Drawing.Point(214, 86)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox3.TabIndex = 21
@@ -261,7 +254,7 @@ Partial Class User_Vote
         '
         Me.ComboBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Location = New System.Drawing.Point(214, 126)
+        Me.ComboBox4.Location = New System.Drawing.Point(214, 114)
         Me.ComboBox4.Name = "ComboBox4"
         Me.ComboBox4.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox4.TabIndex = 22
@@ -270,7 +263,7 @@ Partial Class User_Vote
         '
         Me.ComboBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(214, 154)
+        Me.ComboBox5.Location = New System.Drawing.Point(214, 142)
         Me.ComboBox5.Name = "ComboBox5"
         Me.ComboBox5.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox5.TabIndex = 23
@@ -279,7 +272,7 @@ Partial Class User_Vote
         '
         Me.ComboBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox6.FormattingEnabled = True
-        Me.ComboBox6.Location = New System.Drawing.Point(214, 182)
+        Me.ComboBox6.Location = New System.Drawing.Point(214, 170)
         Me.ComboBox6.Name = "ComboBox6"
         Me.ComboBox6.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox6.TabIndex = 24
@@ -288,7 +281,7 @@ Partial Class User_Vote
         '
         Me.ComboBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox7.FormattingEnabled = True
-        Me.ComboBox7.Location = New System.Drawing.Point(214, 208)
+        Me.ComboBox7.Location = New System.Drawing.Point(214, 196)
         Me.ComboBox7.Name = "ComboBox7"
         Me.ComboBox7.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox7.TabIndex = 25
@@ -297,7 +290,7 @@ Partial Class User_Vote
         '
         Me.ComboBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox8.FormattingEnabled = True
-        Me.ComboBox8.Location = New System.Drawing.Point(214, 235)
+        Me.ComboBox8.Location = New System.Drawing.Point(214, 223)
         Me.ComboBox8.Name = "ComboBox8"
         Me.ComboBox8.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox8.TabIndex = 26
@@ -306,7 +299,7 @@ Partial Class User_Vote
         '
         Me.ComboBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox9.FormattingEnabled = True
-        Me.ComboBox9.Location = New System.Drawing.Point(214, 261)
+        Me.ComboBox9.Location = New System.Drawing.Point(214, 249)
         Me.ComboBox9.Name = "ComboBox9"
         Me.ComboBox9.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox9.TabIndex = 27
@@ -315,7 +308,7 @@ Partial Class User_Vote
         '
         Me.ComboBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox10.FormattingEnabled = True
-        Me.ComboBox10.Location = New System.Drawing.Point(214, 288)
+        Me.ComboBox10.Location = New System.Drawing.Point(214, 276)
         Me.ComboBox10.Name = "ComboBox10"
         Me.ComboBox10.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox10.TabIndex = 28
@@ -324,7 +317,7 @@ Partial Class User_Vote
         '
         Me.ComboBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox11.FormattingEnabled = True
-        Me.ComboBox11.Location = New System.Drawing.Point(214, 315)
+        Me.ComboBox11.Location = New System.Drawing.Point(214, 303)
         Me.ComboBox11.Name = "ComboBox11"
         Me.ComboBox11.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox11.TabIndex = 29
@@ -333,7 +326,7 @@ Partial Class User_Vote
         '
         Me.ComboBox12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox12.FormattingEnabled = True
-        Me.ComboBox12.Location = New System.Drawing.Point(214, 342)
+        Me.ComboBox12.Location = New System.Drawing.Point(214, 330)
         Me.ComboBox12.Name = "ComboBox12"
         Me.ComboBox12.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox12.TabIndex = 30
@@ -342,7 +335,7 @@ Partial Class User_Vote
         '
         Me.ComboBox13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox13.FormattingEnabled = True
-        Me.ComboBox13.Location = New System.Drawing.Point(214, 369)
+        Me.ComboBox13.Location = New System.Drawing.Point(214, 357)
         Me.ComboBox13.Name = "ComboBox13"
         Me.ComboBox13.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox13.TabIndex = 31
@@ -351,7 +344,7 @@ Partial Class User_Vote
         '
         Me.ComboBox14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox14.FormattingEnabled = True
-        Me.ComboBox14.Location = New System.Drawing.Point(214, 397)
+        Me.ComboBox14.Location = New System.Drawing.Point(214, 385)
         Me.ComboBox14.Name = "ComboBox14"
         Me.ComboBox14.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox14.TabIndex = 32
@@ -360,27 +353,16 @@ Partial Class User_Vote
         '
         Me.ComboBox15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox15.FormattingEnabled = True
-        Me.ComboBox15.Location = New System.Drawing.Point(214, 426)
+        Me.ComboBox15.Location = New System.Drawing.Point(214, 414)
         Me.ComboBox15.Name = "ComboBox15"
         Me.ComboBox15.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox15.TabIndex = 33
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(16, 35)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(49, 15)
-        Me.Label17.TabIndex = 29
-        Me.Label17.Text = "Partylist"
-        Me.Label17.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'ComboBox16
         '
         Me.ComboBox16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox16.FormattingEnabled = True
-        Me.ComboBox16.Location = New System.Drawing.Point(214, 453)
+        Me.ComboBox16.Location = New System.Drawing.Point(214, 441)
         Me.ComboBox16.Name = "ComboBox16"
         Me.ComboBox16.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox16.TabIndex = 34
@@ -392,7 +374,7 @@ Partial Class User_Vote
         Me.Vote.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Vote.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Vote.ForeColor = System.Drawing.Color.White
-        Me.Vote.Location = New System.Drawing.Point(451, 547)
+        Me.Vote.Location = New System.Drawing.Point(252, 530)
         Me.Vote.Name = "Vote"
         Me.Vote.Size = New System.Drawing.Size(124, 35)
         Me.Vote.TabIndex = 36
@@ -403,7 +385,7 @@ Partial Class User_Vote
         '
         Me.ComboBox17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox17.FormattingEnabled = True
-        Me.ComboBox17.Location = New System.Drawing.Point(214, 480)
+        Me.ComboBox17.Location = New System.Drawing.Point(214, 468)
         Me.ComboBox17.Name = "ComboBox17"
         Me.ComboBox17.Size = New System.Drawing.Size(350, 23)
         Me.ComboBox17.TabIndex = 35
@@ -412,7 +394,7 @@ Partial Class User_Vote
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(17, 103)
+        Me.Label18.Location = New System.Drawing.Point(17, 91)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(81, 15)
         Me.Label18.TabIndex = 71
@@ -442,12 +424,12 @@ Partial Class User_Vote
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.Label19)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.ComboBox17)
         Me.GroupBox1.Controls.Add(Me.Label18)
         Me.GroupBox1.Controls.Add(Me.ComboBox16)
-        Me.GroupBox1.Controls.Add(Me.Label17)
         Me.GroupBox1.Controls.Add(Me.ComboBox15)
         Me.GroupBox1.Controls.Add(Me.ComboBox14)
         Me.GroupBox1.Controls.Add(Me.ComboBox13)
@@ -462,7 +444,6 @@ Partial Class User_Vote
         Me.GroupBox1.Controls.Add(Me.ComboBox4)
         Me.GroupBox1.Controls.Add(Me.ComboBox3)
         Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label16)
         Me.GroupBox1.Controls.Add(Me.Label15)
         Me.GroupBox1.Controls.Add(Me.Label14)
@@ -481,16 +462,26 @@ Partial Class User_Vote
         Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(11, 21)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(587, 517)
+        Me.GroupBox1.Size = New System.Drawing.Size(587, 503)
         Me.GroupBox1.TabIndex = 75
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Vote Wisely!"
+        '
+        'Button1
+        '
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(323, 24)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(131, 29)
+        Me.Button1.TabIndex = 75
+        Me.Button1.Text = "Straight Vote"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(527, 9)
+        Me.Label20.Location = New System.Drawing.Point(315, 9)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(45, 16)
         Me.Label20.TabIndex = 75
@@ -501,18 +492,34 @@ Partial Class User_Vote
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(374, 9)
+        Me.Label21.Location = New System.Drawing.Point(165, 9)
         Me.Label21.Name = "Label21"
         Me.Label21.Size = New System.Drawing.Size(81, 16)
         Me.Label21.TabIndex = 76
         Me.Label21.Text = "StudentNum"
         Me.Label21.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        'Timer1
+        '
+        '
+        'DateBox
+        '
+        Me.DateBox.AutoSize = True
+        Me.DateBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DateBox.Location = New System.Drawing.Point(475, 9)
+        Me.DateBox.Name = "DateBox"
+        Me.DateBox.Size = New System.Drawing.Size(37, 16)
+        Me.DateBox.TabIndex = 77
+        Me.DateBox.Text = "Date"
+        Me.DateBox.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'User_Vote
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(612, 594)
+        Me.ClientSize = New System.Drawing.Size(612, 577)
+        Me.ControlBox = False
+        Me.Controls.Add(Me.DateBox)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label20)
         Me.Controls.Add(Me.GroupBox1)
@@ -555,10 +562,8 @@ Partial Class User_Vote
     Friend WithEvents ComboBox13 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox14 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox15 As System.Windows.Forms.ComboBox
-    Friend WithEvents Label17 As System.Windows.Forms.Label
     Friend WithEvents ComboBox16 As System.Windows.Forms.ComboBox
     Friend WithEvents Vote As System.Windows.Forms.Button
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
     Friend WithEvents ComboBox17 As System.Windows.Forms.ComboBox
     Friend WithEvents Label18 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
@@ -566,4 +571,7 @@ Partial Class User_Vote
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents DateBox As System.Windows.Forms.Label
 End Class

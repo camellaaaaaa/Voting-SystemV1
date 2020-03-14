@@ -31,6 +31,7 @@ Public Class Admin_Voter
 
     Private Sub Create_Click(sender As Object, e As EventArgs) Handles Create.Click
         Register_User.Show()
+        Me.Hide()
 
     End Sub
 
@@ -200,7 +201,7 @@ Public Class Admin_Voter
         retrieve()
     End Sub
 
-    Private Sub BReset_Click(sender As Object, e As EventArgs) Handles BReset.Click
+    Private Sub BReset_Click(sender As Object, e As EventArgs)
         reset()
         retrieve()
 
@@ -211,5 +212,9 @@ Public Class Admin_Voter
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Admin_Dashboard.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class
